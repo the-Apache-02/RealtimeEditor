@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import logo from '../logo.png';
-import { Link } from 'react-router-dom';
 import { v4 as uuV4 } from "uuid";
 import toast from 'react-hot-toast';
 import { Toaster } from 'react-hot-toast';
