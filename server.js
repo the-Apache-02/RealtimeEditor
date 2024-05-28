@@ -15,6 +15,10 @@ app.use(express.static('build'))
 app.use((req,res,next)=>{
     res.sendFile(path.join(__dirname,'build','index.html'));
 })
+
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  });
 //create a map to store socket id map with username
 const userSocketMap={};
 
