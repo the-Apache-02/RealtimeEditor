@@ -66,7 +66,7 @@ export const EditorPage = () => {
       socketRef.current.off(ACTIONS.JOINED)
       socketRef.current.off(ACTIONS.DISCONNECTED)
     }
-  }, []);
+  }, [socketRef.current]);
 
 
 
