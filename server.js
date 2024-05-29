@@ -16,9 +16,9 @@ app.use((req,res,next)=>{
     res.sendFile(path.join(__dirname,'build','index.html'));
 })
 
-app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-  });
+// app.get('/', function (req, res) {
+//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
+//   });
 //create a map to store socket id map with username
 const userSocketMap={};
 
@@ -35,14 +35,7 @@ function getAllClients(roomId){
 //when connection is established from client side
 io.on('connection',(socket)=>{
     console.log('socket connected',socket.id);
-    // socket.on("chatMessage", (message) => {
-    //     io.emit("chat message", message);
-    //   })
-    
-    // socket.on("disconnect", () => {
-    // io.emit("Chat disconnected");
-    // })
-
+   
     socket.on(ACTIONS.JOIN,({roomId,username})=>{
         
         userSocketMap[socket.id]=username;
