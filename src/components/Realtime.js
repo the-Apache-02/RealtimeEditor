@@ -42,7 +42,7 @@ const Realtime = ({socketRef,roomId,onCodeChange}) => {
 
         }
         init();
-    },[])
+    },[editorRef.current])
 
     useEffect(()=>{
       if(socketRef.current){
