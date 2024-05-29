@@ -31,7 +31,7 @@ export const EditorPage = () => {
       socketRef.current.emit(ACTIONS.JOIN, {
         roomId,
         username: location.state?.username
-      })
+      });
 
       //listen the forEach loop for the client from the call of backend showing this joined the room
       socketRef.current.on(ACTIONS.JOINED, ({ clients, username, socketId }) => {

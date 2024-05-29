@@ -57,7 +57,7 @@ const Realtime = ({socketRef,roomId,onCodeChange}) => {
       return ()=>{
         socketRef.current.off(ACTIONS.CODE_CHANGE)
       }
-    },[socketRef.current])
+    },[socketRef.current,roomId,onCodeChange])
   return (
     <textarea id='realtimeCodeEditor'></textarea>
   )

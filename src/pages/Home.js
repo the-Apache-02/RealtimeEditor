@@ -85,7 +85,7 @@ export const Home = () => {
             <footer>
                 <h4>
                     Built with 🧡 by &nbsp;
-                    <a href='https'>Namo Editor</a>
+                    <a href='https://mail.google.com/mail/u/0/#inbox'>Namo Editor</a>
                 </h4>
             </footer>
         </div>
